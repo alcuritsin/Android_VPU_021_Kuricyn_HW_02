@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">task_07</string>
+    <string name="tvTitle">Конвертер валют</string>
+    <string name="amount_currency_hint">Amount currency</string>
+    <string name="amount_currency_label">Введите сумму:</string>
+    <string name="result_label">Результат:</string>
+    <string name="currency_in_label">Выберите валюту:</string>
+    <string name="currency_out_label">Конвертировать в:</string>
+    <string name="radio_button_rcb">ЦБР</string>
+    <string name="radio_button_buying">Покупка</string>
+    <string name="radio_button_selling">Продажа</string>
+    <string name="button_calculate">Рассчитать</string>
+</resources>

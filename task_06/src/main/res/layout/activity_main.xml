@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitleApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Список фильмов"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnFilms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitleApp"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleApp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleApp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvAddFilmTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Добавить фильм"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/spnFilms"
+        app:layout_constraintStart_toStartOf="@+id/spnFilms"
+        app:layout_constraintTop_toBottomOf="@+id/spnFilms" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvAddFilmTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvAddFilmTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddFilmTitle" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/etTitle"
+        android:text="Название фильма:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etTitle"
+        app:layout_constraintEnd_toEndOf="@+id/etTitle"
+        app:layout_constraintStart_toStartOf="@+id/etTitle" />
+
+    <EditText
+        android:id="@+id/etGenre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Genre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etTitle"
+        app:layout_constraintStart_toStartOf="@+id/etTitle"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Жанр:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etGenre"
+        app:layout_constraintEnd_toEndOf="@+id/etGenre"
+        app:layout_constraintStart_toStartOf="@+id/etGenre" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/etGenre"
+        app:layout_constraintStart_toStartOf="@+id/etGenre"
+        app:layout_constraintTop_toBottomOf="@+id/etGenre" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Год выпуска:"
+        app:layout_constraintBottom_toTopOf="@+id/etYear"
+        app:layout_constraintEnd_toEndOf="@+id/etYear"
+        app:layout_constraintStart_toStartOf="@+id/etYear" />
+
+    <Button
+        android:id="@+id/btnAddFilm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="@+id/etYear"
+        app:layout_constraintStart_toStartOf="@+id/etYear"
+        app:layout_constraintTop_toBottomOf="@+id/etYear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

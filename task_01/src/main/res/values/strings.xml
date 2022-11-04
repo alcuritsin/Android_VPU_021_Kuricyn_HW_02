@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">task_01</string>
+    <string name="btnDown_04">4</string>
+    <string name="btnDown_03">3</string>
+    <string name="btnDown_02">2</string>
+    <string name="btnDown_01">1</string>
+    <string name="btnUp_04">4</string>
+    <string name="btnUp_03">3</string>
+    <string name="btnUp_02">2</string>
+    <string name="btnUp_01">1</string>
+</resources>
